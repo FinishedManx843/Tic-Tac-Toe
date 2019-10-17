@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--tic Tac Toe HTML file-->
+
+<html>
+    <head>  
+        <title>Tic Tac Toe</title>
+        <style>
+            body {
+                margin: 50px;
+                background-color: gray;
+            }
+            img {
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+            #row1 {
+                align-items: center;
+            }
+            #row2 {
+                align-items: center;
+            }
+            #row3 {
+                align-items: center;
+            }
+			#turn {
+				display: inline-block;
+			}
+			#player {
+				display: inline-block;
+			}
+            #title {
+                color: Black;
+                text-align: center;
+
+            }
+            #Author {
+                margin-top: 300px;
+            }
+
+        </style>
+    </head>
+
+    <body onload = "reset()">
+	<center>
+        <h1 id="title">Tic Tac Toe</h1>
+        <!--Gameboard-->
+        <div id="row1">
+        <img id="one" src = "white.png" onclick="one()">
+        <img id="two" src = "white.png" onclick="two()">
+        <img id="three" src = "white.png" onclick="three()">
+    </div>
+    <div id="row2">
+        <img id="four" src = "white.png" onclick="four()">
+        <img id="five" src = "white.png" onclick="five()">
+        <img id="six" src = "white.png" onclick="six()">
+    </div>
+    <div id="row3">
+        <img id="seven" src = "white.png" onclick="seven()">
+        <img id="eight" src = "white.png" onclick="eight()">
+        <img id="nine" src = "white.png" onclick="nine()">
+    </div>
+	<div id="menu">
+		<button id="reset" onclick="reset()">Reset</button>
+		<p id="player">Player </p>
+		<p id="turn"></p>
+	</div>
+
+</center>
+<footer>
+    <p id="Author">Copyright 2019 - Luke Shuttleworth</p>
+</footer>
+        <!-------------->
+
+
+        
+        <script src = "index.js"></script>
+    </body>
+
+</html>
