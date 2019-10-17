@@ -1,2 +1,3 @@
 # Tic-Tac-Toe
-Classic game of Tic Tac Toe... for now.
+Tic Tac Toe with a 4x4 board
+
